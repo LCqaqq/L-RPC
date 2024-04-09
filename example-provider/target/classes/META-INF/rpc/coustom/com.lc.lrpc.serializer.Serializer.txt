@@ -1,0 +1,2 @@
+jdk=com.lc.lrpc.serializer.JdkSerializer
+json=com.lc.lrpc.serializer.JsonSerializer
