@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 @Getter
 public enum ProtocolMessageSerializerEnum {
-    JOK(0,"jdk"),
+    JDK(0,"jdk"),
     JSON(1,"json");
 
     private final int key;
@@ -22,7 +22,7 @@ public enum ProtocolMessageSerializerEnum {
         return Arrays.stream(values()).map(item -> item.value).collect(Collectors.toList());
     }
 
-    public static ProtocolMessageSerializerEnum getEnumByValue(int key){
+    public static ProtocolMessageSerializerEnum getEnumByKey(int key){
         for (ProtocolMessageSerializerEnum anEnum : ProtocolMessageSerializerEnum.values()){
             if (anEnum.key == key){
                 return anEnum;

@@ -33,7 +33,7 @@ public class JsonSerializer implements Serializer{
 
 
     private <T> T handleRequest(RpcRequest rpcRequest, Class<T> type) throws IOException{
-        Class<?>[] parametTypes = rpcRequest.getParameterType();
+        Class<?>[] parametTypes = rpcRequest.getParameterTypes();
         Object[] args = rpcRequest.getArgs();
 
         for (int i=0;i<parametTypes.length;i++){

@@ -10,6 +10,7 @@ import com.lc.lrpc.registry.Registry;
 import com.lc.lrpc.registry.RegistryFactory;
 import com.lc.lrpc.server.HttpServer;
 import com.lc.lrpc.server.VertxHttpServer;
+import com.lc.lrpc.server.tcp.VertxTcpServer;
 
 public class ProviderExample {
     public static void main(String[] args){
@@ -31,9 +32,12 @@ public class ProviderExample {
         } catch (Exception e){
             throw new RuntimeException(e);
         }
-        //启动服务
-        HttpServer httpServer = new VertxHttpServer();
-        httpServer.doStar(RpcApplication.getRpcConfig().getServerPort());
+//        //启动服务
+//        HttpServer httpServer = new VertxHttpServer();
+//        httpServer.doStar(RpcApplication.getRpcConfig().getServerPort());
 
+        //启动服务
+        VertxTcpServer vertxTcpServer = new VertxTcpServer();
+        vertxTcpServer.doStar(8088);
     }
 }
