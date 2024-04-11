@@ -1,0 +1,2 @@
+no=com.lc.lrpc.fault.retry.NoRetryStrategy
+fixedInterval=com.lc.lrpc.fault.retry.FixedIntervalRetryStrategy

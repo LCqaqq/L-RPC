@@ -1,5 +1,6 @@
 package com.lc.lrpc.config;
 
+import com.lc.lrpc.fault.retry.RetryStrategyKeys;
 import com.lc.lrpc.loadbalance.LoadBalancer;
 import com.lc.lrpc.loadbalance.LoadBalancerKeys;
 import com.lc.lrpc.serializer.SerializerKeys;
@@ -39,4 +40,8 @@ public class RpcConfig {
      * 负载均衡器配置
      */
     private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;
+    /**
+     * 重试策略
+     */
+    private String retryStrategy = RetryStrategyKeys.NO;
 }

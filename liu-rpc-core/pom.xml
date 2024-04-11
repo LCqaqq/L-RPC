@@ -40,13 +40,19 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
+        <!-- 失败重试-->
+        <dependency>
+            <groupId>com.github.rholder</groupId>
+            <artifactId>guava-retrying</artifactId>
+            <version>2.0.0</version>
+        </dependency>
         <!--hessian-->
         <dependency>
             <groupId>com.caucho</groupId>
             <artifactId>hessian</artifactId>
             <version>4.0.66</version>
         </dependency>
-
+        <!--kryo-->
         <dependency>
             <groupId>com.esotericsoftware</groupId>
             <artifactId>kryo</artifactId>
