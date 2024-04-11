@@ -1,5 +1,7 @@
 package com.lc.lrpc.config;
 
+import com.lc.lrpc.loadbalance.LoadBalancer;
+import com.lc.lrpc.loadbalance.LoadBalancerKeys;
 import com.lc.lrpc.serializer.SerializerKeys;
 import lombok.Data;
 
@@ -33,4 +35,8 @@ public class RpcConfig {
      * 注册中心配置
      */
     private RegistryConfig registryConfig = new RegistryConfig();
+    /**
+     * 负载均衡器配置
+     */
+    private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;
 }
