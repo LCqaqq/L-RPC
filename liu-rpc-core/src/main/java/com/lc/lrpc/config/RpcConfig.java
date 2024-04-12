@@ -1,6 +1,7 @@
 package com.lc.lrpc.config;
 
 import com.lc.lrpc.fault.retry.RetryStrategyKeys;
+import com.lc.lrpc.fault.tolerant.TolerantStrategyKeys;
 import com.lc.lrpc.loadbalance.LoadBalancer;
 import com.lc.lrpc.loadbalance.LoadBalancerKeys;
 import com.lc.lrpc.serializer.SerializerKeys;
@@ -44,4 +45,8 @@ public class RpcConfig {
      * 重试策略
      */
     private String retryStrategy = RetryStrategyKeys.NO;
+    /**
+     * 容错策略
+     */
+    private String tolerantStrategy = TolerantStrategyKeys.FAST;
 }

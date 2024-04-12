@@ -20,7 +20,7 @@ public class UserServiceProxy implements UserService {
         RpcRequest rpcRequest =RpcRequest.builder()
                 .serviceName(UserService.class.getName())
                 .methodName("getUser")
-                .parameterType(new Class[]{User.class})
+                .parameterTypes(new Class[]{User.class})
                 .args(new Object[]{user})
                 .build();
         try {
