@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * 轮询负载均衡器
  */
-public class RoundRobinBalancer implements LoadBalancer {
+public class RoundRobinLoadBalancer implements LoadBalancer {
     /**
      * 当前轮询下标
      */

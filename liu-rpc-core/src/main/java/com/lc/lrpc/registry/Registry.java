@@ -25,7 +25,7 @@ public interface Registry {
     /**
      * 服务发现
      */
-    List<ServiceMetaInfo> serviceDiscover(String serviceKey);
+    List<ServiceMetaInfo> serviceDiscovery(String serviceKey);
     /**
      * 服务销毁
      */

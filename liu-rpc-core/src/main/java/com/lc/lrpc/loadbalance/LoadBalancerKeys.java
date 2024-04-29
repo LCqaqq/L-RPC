@@ -5,7 +5,7 @@ package com.lc.lrpc.loadbalance;
  */
 public interface LoadBalancerKeys {
 
-    String ROUND_ROBIN = "roundRobin";
+//    String ROUND_ROBIN = "round_robin";
 
     String RANDOM = "random";
 

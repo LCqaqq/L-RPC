@@ -9,12 +9,13 @@ import java.util.Map;
  * 负载均衡器
  */
 public interface LoadBalancer {
+
     /**
      * 选择服务调用
-     * @param requestParams
-     * @param serviceMetaInfoList
+     *
+     * @param requestParams       请求参数
+     * @param serviceMetaInfoList 可用服务列表
      * @return
      */
-    ServiceMetaInfo select(Map<String,Object>  requestParams, List<ServiceMetaInfo> serviceMetaInfoList);
-
+    ServiceMetaInfo select(Map<String, Object> requestParams, List<ServiceMetaInfo> serviceMetaInfoList);
 }

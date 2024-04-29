@@ -56,7 +56,7 @@ public class RegistryTest {
         serviceMetaInfo.setServiceName("myService");
         serviceMetaInfo.setServiceVersion("1.0");
         String serviceKey = serviceMetaInfo.getServiceKey();
-        List<ServiceMetaInfo> serviceMetaInfoList = registry.serviceDiscover(serviceKey);
+        List<ServiceMetaInfo> serviceMetaInfoList = registry.serviceDiscovery(serviceKey);
         Assert.assertNotNull(serviceMetaInfoList);
     }
 

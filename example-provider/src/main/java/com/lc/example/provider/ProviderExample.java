@@ -33,11 +33,11 @@ public class ProviderExample {
             throw new RuntimeException(e);
         }
 //        //启动服务
-//        HttpServer httpServer = new VertxHttpServer();
-//        httpServer.doStar(RpcApplication.getRpcConfig().getServerPort());
+        HttpServer httpServer = new VertxHttpServer();
+        httpServer.doStar(RpcApplication.getRpcConfig().getServerPort());
 
         //启动服务
-        VertxTcpServer vertxTcpServer = new VertxTcpServer();
-        vertxTcpServer.doStar(8088);
+//        VertxTcpServer vertxTcpServer = new VertxTcpServer();
+//        vertxTcpServer.doStar(8088);
     }
 }

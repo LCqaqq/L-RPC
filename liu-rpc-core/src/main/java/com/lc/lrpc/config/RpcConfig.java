@@ -40,7 +40,7 @@ public class RpcConfig {
     /**
      * 负载均衡器配置
      */
-    private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;
+    private String loadBalancer = LoadBalancerKeys.RANDOM;
     /**
      * 重试策略
      */

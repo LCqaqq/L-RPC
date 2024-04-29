@@ -76,7 +76,7 @@ public class EtcdRegistry implements Registry {
     }
 
     @Override
-    public List<ServiceMetaInfo> serviceDiscover(String serviceKey) {
+    public List<ServiceMetaInfo> serviceDiscovery(String serviceKey) {
         //优先从缓存获取服务
         List<ServiceMetaInfo> cacheServiceMetaInfoList = registryServiceCache.readCache();
         if (cacheServiceMetaInfoList != null) {
