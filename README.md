@@ -6,7 +6,7 @@
 
 ## 框架设计
 
-![](image\1.png)
+![]([image\1.png](https://github.com/LCqaqq/L-RPC/blob/main/image/1.png))
 ## 主要模块
 ### 服务客户端
 
@@ -20,7 +20,7 @@
 - 利用定时任务和etcd key的TTL实现服务的心跳检测，自动续期机制，下线自动清除注册服务功能
 - 通过etcd watch 监听节点过期和自动更新缓存
 
-![](image\2.png)
+![]([image\2.png](https://github.com/LCqaqq/L-RPC/blob/main/image/2.png))
 
 
 
