@@ -7,6 +7,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/liu-rpc-core/pom.xml" />
         <option value="$PROJECT_DIR$/L-RPC-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/explame-springboot-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/explame-springboot-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/example-springboot-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/example-springboot-consumer/pom.xml" />
       </list>
     </option>
   </component>
